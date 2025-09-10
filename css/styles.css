@@ -1,4 +1,4 @@
-img {
+.Visiitkaart {
     width: 100px;
     border-radius: 50px;
     float: left;
@@ -7,3 +7,48 @@ img {
     p.title {
         font-weight:bold;
     }
+    h1 {
+        text-align: center;
+        color: blue;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    section {
+        margin-bottom: 20px;
+        background-color: aqua;
+    }
+    .navi {
+        display: flex;
+        justify-content: flex-end;
+        background-color: lightgray;
+        width: fit-content;
+    }
+
+    .skip{
+        position: absolute;
+        left: -10000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+    .skip:focus {
+        position: static;
+        width: auto;
+        height: auto;
+      }
+body, html{
+    height: 100%;
+}
+.hero-pilt{
+    background-image: url("https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg");
+    height: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
