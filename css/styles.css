@@ -9,7 +9,7 @@
     }
     h1 {
         text-align: center;
-        color: blue;
+        color: white;
     }
     body {
         font-family: Arial, sans-serif;
@@ -49,6 +49,11 @@ body, html{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+.taust{
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 25px;
 }
 
 
