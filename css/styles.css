@@ -94,7 +94,6 @@ footer{
   bottom: 1rem;        
   z-index: 1000;
 }
-
 @media (max-width: 768px) {
 
   h1{
