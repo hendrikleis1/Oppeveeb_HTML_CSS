@@ -7,58 +7,157 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="hero-pilt">
+    <header id="algus" class="hero-pilt">
       <h1>Õppeveeb</h1>
       <a href="#põhi" class="skip">Liigu sisu juurde</a>
       <nav class="navi" aria-label="Põhinavigatsioon">
-        <a href="#Sissejuhatus">Sissejuhatus</a>
-        <a href="#Teooria">Teooria</a>
-        <a href="#Kontakt">Kontakt</a>
+        <ul>
+          <li><a href="#Sissejuhatus">Sissejuhatus</a></li>
+          <li><a href="#Teooria">Teooria</a></li>
+          <li><a href="#Kontakt">Kontakt</a></li>
+        </ul>
       </nav>
     </header>
-    <main id="main">
+    <main id="põhi">
       <section class="taust" id="Sissejuhatus">
         <h2>Sissejuhatus</h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod, id
-        doloremque quae aperiam tempora tenetur et earum ipsum, quidem
-        reprehenderit eius numquam reiciendis sit quisquam exercitationem
-        expedita deleniti accusamus dolorem? Deserunt quo alias dolores
-        doloremque iste odio ea? Minima iusto, porro recusandae molestias iste
-        quae atque delectus enim dolor, in mollitia tenetur? Dicta a iusto illo
-        eveniet sequi itaque id ullam asperiores cum atque, minima optio labore,
-        ut voluptatibus fugiat repellat eum cumque aliquid sed animi at illum
-        eos? Molestiae perspiciatis modi quia dolorum ipsa quo, itaque fuga a
-        magnam eveni et illo, soluta temporibus necessitatibus? Rem sit cum
-        debitis.
+        <h3>Mis on HTML?</h3>
+        <p>
+          HTML ehk HyperText Markup Language on veebilehtede loomise aluskeel.
+          See ei ole programmeerimiskeel, vaid märgistuskeel, mis kirjeldab lehe
+          sisu ja struktuuri: millised osad on pealkirjad, millised lõigud, kus
+          on pildid, lingid, tabelid või vormid. HTML kasutab silte (tage),
+          näiteks <code>&lt;h1&gt;</code> suurima pealkirja või
+          <code>&lt;p&gt;</code> lõigu jaoks, et anda sisule tähendus ja roll.
+          Korralik HTML-struktuur aitab brauseritel, otsingumootoritel ja
+          abitehnoloogiatel sisu õigesti tõlgendada, mis parandab nii loetavust
+          kui ka ligipääsetavust. Kujundus ja värvid lisatakse tavaliselt eraldi
+          stiililehel (CSS), et hoida sisu ja esitus lahus. Kokkuvõttes on HTML
+          veebilehe vundament: see määrab, mis lehel on ja kuidas see on üles
+          ehitatud.
+        </p>
+        <h3>Mis on CSS?</h3>
+        <p>
+          CSS (Cascading Style Sheets) on stiililehtede keel, millega
+          kujundatakse HTML-is loodud veebilehti. Kui HTML määrab, milline sisu
+          lehel on, siis CSS ütleb, kuidas see sisu välja näeb – näiteks värvid,
+          fondid, suurused, paigutus ja animatsioonid. CSS võimaldab eraldada
+          kujunduse ja struktuuri: sama HTML-sisu saab kuvada väga erineva
+          välimusega lihtsalt stiilireegleid muutes. Reeglid koosnevad
+          valijatest (nt elemendi nimi, klass või ID) ja omadustest (nt color,
+          margin, display). Tänu CSS-ile on võimalik luua paindlikke,
+          reageerivaid (RWD) ja ligipääsetavaid kujundusi, mis kohanduvad
+          erinevate ekraanide ja seadmetega.
+        </p>
       </section>
-      <section id="Teooria">
+      <section class="taust" id="Teooria">
         <h2>Teooria</h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-        accusantium atque fugit ad voluptatem rem adipisci hic magni porro ex
-        quaerat omnis cumque at alias nostrum enim, vero temporibus quasi
-        ducimus asperiores exercitationem. Nemo tempora in doloremque autem quo
-        consectetur saepe aliquid maiores, voluptas adipisci similique pariatur
-        quam perferendis eius debitis voluptatem. Fugiat voluptate voluptas
-        facilis cumque esse, vel temporibus repellat nam? Est fuga magnam sit
-        cumque rem quos iusto harum consectetur excepturi? Laborum dignissimos,
-        in voluptates asperiores alias ipsum, impedit eligendi fugiat est ab
-        sunt doloribus omnis atque voluptate. Optio in, iure deserunt blanditiis
-        rerum unde quo similique delectus?
-        <video controls width="250" width="100%">
+        <h3>HTML teooria</h3>
+        <p>
+          Iga element koosneb tavaliselt avavast sildist, sisust ja sulgevast
+          sildist. Näiteks:
+        </p>
+        <pre><code>&lt;p&gt;See on üks lõik teksti.&lt;/p&gt;</code></pre>
+        <p>
+          HTML-i põhielemendid jaotatakse tavaliselt järgmistesse
+          kategooriatesse:
+        </p>
+        <ul>
+          <li>
+            <strong>Pealkirjad</strong> – <code>&lt;h1&gt;</code> kuni
+            <code>&lt;h6&gt;</code>
+          </li>
+          <li>
+            <strong>Lõigud ja tekst</strong> – <code>&lt;p&gt;</code>,
+            <code>&lt;span&gt;</code>
+          </li>
+          <li><strong>Lingid</strong> – <code>&lt;a href=\"...\"&gt;</code></li>
+          <li>
+            <strong>Pildid</strong> –
+            <code>&lt;img src=\"...\" alt=\"...\"&gt;</code>
+          </li>
+          <li>
+            <strong>Loendid</strong> – <code>&lt;ul&gt;</code>,
+            <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code>
+          </li>
+          <li>
+            <strong>Tabelid</strong> – <code>&lt;table&gt;</code>,
+            <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>
+          </li>
+          <li>
+            <strong>Vormid</strong> – <code>&lt;form&gt;</code>,
+            <code>&lt;input&gt;</code>, <code>&lt;button&gt;</code>
+          </li>
+        </ul>
+        <p>
+          Lisaks on oluline lisada <strong>metaandmed</strong> (nt märgistus
+          <code>&lt;meta charset=\"utf-8\"&gt;</code> või lehe pealkiri
+          <code>&lt;title&gt;</code>) dokumendi <code>&lt;head&gt;</code>-i
+          osasse.
+        </p>
+        <p>
+          Kokkuvõttes on HTML veebilehe vundament: see määrab, mis elemendid
+          lehel on ja kuidas need on loogiliselt üles ehitatud. Kujundus ja
+          värvid lisatakse CSS-iga, dünaamiline käitumine aga JavaScriptiga.
+        </p>
+        <h3>CSS teooria – põhitõed</h3>
+        <p>
+          CSS (<em>Cascading Style Sheets</em>) on keel, mis määrab
+          HTML-elemendi välimuse – värvid, fondid, vahed, piirjooned ja
+          paigutuse. CSS eraldab kujunduse sisust, muutes koodi lihtsamini
+          hallatavaks.
+        </p>
+        <p>
+          Stiilireegel koosneb <strong>valijast</strong> ja omadustest. Näiteks:
+        </p>
+        <pre><code>p { color: #222; margin-bottom: 1rem; }</code></pre>
+        <ul>
+          <li>Elemendivalija: <code>p</code></li>
+          <li>Klass: <code>.btn</code></li>
+          <li>ID: <code>#pealkiri</code></li>
+          <li>Pseudoklass: <code>:hover</code></li>
+        </ul>
+        <p>
+          Paigutuseks kasutatakse Flexboxi (joondus reas või veerus) ja Gridi
+          (keerukamad skeemid). Mobile-first lähenemisel kirjutatakse stiilid
+          esmalt väikestele ekraanidele ja seejärel lisatakse
+          <code>@media</code> abil suuremate ekraanide täiustused.
+        </p>
+        <video class="video" controls width="350" width="100%">
           <source src="videos/video_preview_h264.mp4" type="video/mp4" />
           <a href="videos/video_preview_h264.mp4">MP4</a>
         </video>
       </section>
-      <section id="Kontakt">
+      <section class="taust" id="Kontakt">
         <h2>Kontakt</h2>
-        <div>
-        <img class="Visiitkaart" src="images/tähed.jpg" alt="Tähistaevas" />
-        <p class="title">Hendrik Leis</p>
-        <p>
-          Olen 23-aastane ja elan Tartus. Minu hobideks on muusika ja võrkpall.
-        </p>
-      </div>
+        <div class="kontakt_paigutus">
+          <img
+            class="Visiitkaart"
+            src="images/tähed.jpg"
+            alt="Tähistaevas"
+            loading="lazy"
+          />
+          <p class="title">Hendrik Leis</p>
+          <p>
+            Olen 23-aastane ja elan Tartus. Minu hobideks on muusika ja
+            võrkpall.
+          </p>
+        </div>
       </section>
+      <footer>
+        <a class="ülesse" href="#algus" aria-label="Tagasi algusesse">
+          <svg
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path d="M12 4l-7 7h4v7h6v-7h4z"></path>
+          </svg>
+          <span>Tagasi üles</span>
+        </a>
+      </footer>
     </main>
     <footer></footer>
   </body>

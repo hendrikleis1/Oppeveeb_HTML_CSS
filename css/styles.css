@@ -1,32 +1,51 @@
+.navi ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navi li {
+  margin-bottom: 0.5rem;
+}
+.navi a {
+  display: block;
+  padding: 0.5rem;
+  color: black;
+  text-decoration: none;
+}
+.navi a:hover,
+.navi a:focus-visible {
+  background: white;
+  border-radius: 0.25rem;
+}
+.navi {
+        display: flex;
+        justify-content: flex-end;
+        background-color: lightgray;
+        width: fit-content;
+}
 .Visiitkaart {
     width: 100px;
     border-radius: 50px;
     float: left;
     margin-right:10px;
     }
-    p.title {
+p.title {
         font-weight:bold;
     }
-    h1 {
+h1 {
         text-align: center;
-        color: white;
+        color: black;
+        font-size: 4rem;
     }
-    body {
+body {
         font-family: Arial, sans-serif;
         margin: 20px;
     }
-    section {
+section {
         margin-bottom: 20px;
         background-color: aqua;
     }
-    .navi {
-        display: flex;
-        justify-content: flex-end;
-        background-color: lightgray;
-        width: fit-content;
-    }
-
-    .skip{
+.skip{
         position: absolute;
         left: -10000px;
         top: auto;
@@ -34,7 +53,7 @@
         height: 1px;
         overflow: hidden;
     }
-    .skip:focus {
+.skip:focus {
         position: static;
         width: auto;
         height: auto;
@@ -43,7 +62,7 @@ body, html{
     height: 100%;
 }
 .hero-pilt{
-    background-image: url("https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg");
+    background-image: url("https://cdn.pixabay.com/photo/2022/08/23/01/10/cape-7404790_1280.jpg");
     height: 40%;
     background-position: center;
     background-repeat: no-repeat;
@@ -55,5 +74,33 @@ body, html{
     padding: 20px;
     border-radius: 25px;
 }
+#Kontakt {
+  display: grid;
+  place-items: center;
+  min-height: 20vh;
+}
 
+.kontakt_paigutus {
+  text-align: center;
+  max-width: 300px;
+}
+footer{
+    position: relative;
+    min-height: 20px;
+}
+.ülesse{
+   position: absolute;
+  right: 1rem;         
+  bottom: 1rem;        
+  z-index: 1000;
+}
 
+@media (max-width: 768px) {
+
+  h1{
+    font-size: 2rem;
+  }
+  .video{
+    max-width: 100%;
+  }
+}
